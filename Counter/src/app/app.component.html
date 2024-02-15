@@ -1,0 +1,24 @@
+
+
+<div class="counter">
+  <fieldset>
+    <legend><h1><strong>Counter</strong></h1></legend>
+  <h2>Count: <span class="count">{{count}}</span></h2>
+  <div>
+    <!-- click is the attribute and disabled is one way of databinding =>property binding
+    string interpolation uses => {{}} => Sending data from component to templet,
+    propertyBinding uses => [] => sending data from component to templet,
+    Event Binding => () => from templent to component uses-->
+<div class="button">
+
+  <button (click)="incr()" [disabled]="">+</button>
+  <button (click)="decr ()">-</button>
+  <button (click)="reset()">Reset</button>
+</div>
+<div class="ero" [ngStyle]="{color: colors}" >
+  {{count}} {{ero}}
+</div>
+  </div>
+  {{msg1}}{{msg2}}
+</fieldset>
+</div>

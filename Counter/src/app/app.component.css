@@ -1,0 +1,44 @@
+
+h1{
+    text-align: center;
+}
+.counter{
+    height:50vh;
+    width: 450px;
+    margin: 10vh auto;
+    /* border: solid; */
+    text-align: center;
+    padding: 20px;
+}
+.count{
+    font-size: xx-large;
+    
+}
+fieldset{
+    padding-bottom: 10%;
+    border-color: #c1121f;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-width: 2.5px;
+}
+.button button{
+    margin: 10px;
+    border-radius:10px ;
+    
+}
+button{
+    font-size: 20px;
+    padding:0px 10px ;
+    color: aliceblue;
+    background-color: #c1121f;
+}
+.ero{
+    border-style: double;
+    font-size: xx-large;
+    font-weight: 900;
+    margin:0 25% ;
+    margin-top: 10% ;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    
+}
