@@ -2,25 +2,29 @@
 <div class="box">
   <div >
     <fieldset class="og">
-    <input type="text" [(ngModel)]="name">
-    <input type="email"  [(ngModel)]="em">
-    <input type="password" [(ngModel)]="pass">
-    <button (click)="show()" >Sign in</button>
+      <legend><span>Main Box</span></legend>
+
+    <input type="text" [(ngModel)]="name" placeholder="Enter Name">
+    <input type="email"  [(ngModel)]="em" placeholder="Enter Email">
+    <input type="password" [(ngModel)]="pass" placeholder="Enter Password">
+    <br><button (click)="show()" >Sign in</button>
   </fieldset>
   </div>
+
   <div >
-    <fieldset class="box2">
-<table>
-  <tr>Name:  
-    <td>{{name}}</td>
-  </tr>
-  <tr>Email:  
-    <td>{{em}}</td>
-  </tr>
-  <tr>Password:  
-    <td>{{pass}}</td>
-  </tr>
-</table>
+    <fieldset class="copy">
+      <legend><span>Copy Box</span></legend>
+
+  Name:&nbsp;
+    {{name}} <br>
+  
+  Email:&nbsp;
+    {{em}} <br>
+  
+  Password:&nbsp;
+    {{pass}} <br>
+  
+
 </fieldset>
   </div>
 </div>
