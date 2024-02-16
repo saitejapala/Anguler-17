@@ -1,12 +1,14 @@
 <!-- this is an example of tw way data binding  -->
 <div class="main">
   <div class="og">
-    <input type="text">
-    <input type="email">
-    <input type="password">
-    <button>Sign in</button>
+    <input type="text" [(ngModel)]="name">
+    <input type="email"  [(ngModel)]="em">
+    <input type="password" [(ngModel)]="pass">
+    <button (click)="show()">Sign in</button>
   </div>
   <div class="copy">
-
+     {{name}};
+     {{em}};
+     {{pass}}
   </div>
 </div>
