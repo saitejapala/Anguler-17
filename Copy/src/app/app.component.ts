@@ -12,5 +12,9 @@ export class AppComponent {
   pass!:string;
   show(){
     alert(`Hello ${this.name} check your credentials\n Email: ${this.em}\n Password: ${this.pass}`);
+    this.name="";
+    this.em="";
+    this.pass="";
+
   }
 }
