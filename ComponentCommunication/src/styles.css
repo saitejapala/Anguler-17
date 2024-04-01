@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* .snone::-webkit-scrollbar{
+display:none;
+} */
+
+img{
+    height: 250px;
+    width:170px;
+}
+.green{
+    color: green;
+}
+.bg-blue{
+    background-color: blue;
+}
