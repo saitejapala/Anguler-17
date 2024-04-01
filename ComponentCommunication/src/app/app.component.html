@@ -28,7 +28,7 @@
         <div class="d-flex overflow-auto snone">
             <div *ngFor="let item of MonsterVerse">
                 <!-- I used property binding here because the item img link is in the array inside app.component.ts  -->
-                <app-child-1 [imglink]="item.imgLink_c" [imgname]="item.imgText_c"></app-child-1>
+                <app-child-1 [imglink]="item.imgLink_c" [imgname]="item.imgText_c" (click)="AddToList()"></app-child-1>
 
             </div>
         </div>
