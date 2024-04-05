@@ -1,86 +1,72 @@
-<nav
-    class="navbar navbar-expand-lg navbar-light bg-light"
-    
->
-    <div class="container">
-        <a class="navbar-brand" href="#">Header Component</a>
-        <button
-            class="navbar-toggler d-lg-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId"> 
-            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <div class="form-floating mx-3 my-1">
-                        <input
-                            type="text"
-                            class="form-control"
-                            name="Value1"
-                            id="Value1"
-                            placeholder=""
-                            [(ngModel)]="Value1"
-                        />
-                        <label for="Value1">Value1</label>
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                <p class="h5">By using &#64;Output </p>
+
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+<!-- Accordian item #1 Starts -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">Header Component</a>
+                        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavId">
+                            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <div class="form-floating mx-3 my-1">
+                                        <input type="text" class="form-control" name="Value1" id="Value1" placeholder=""
+                                            [(ngModel)]="Value1" />
+                                        <label for="Value1">Value1</label>
+                                    </div>
+
+                                </li>
+
+                                <li class="nav-item">
+                                    <div class="form-floating mx-3 my-1">
+                                        <input type="text" class="form-control" name="Value2" id="Value2" placeholder=""
+                                            [(ngModel)]="Value2" />
+                                        <label for="Value2">Value2</label>
+                                    </div>
+
+                                </li>
+
+                                <li class="nav-item">
+                                    <div class="form-floating mx-3 my-1">
+                                        <input type="text" class="form-control" name="Value3" id="Value3" placeholder=""
+                                            [(ngModel)]="Value3" />
+                                        <label for="Value3">Value3</label>
+                                    </div>
+
+                                </li>
+
+                                <li class="d-flex text-center align-items-center nav-item">
+                                    <button type="button" class="btn btn-outline-primary" (click)="send()">
+                                        Print
+                                    </button>
+
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+
+
                     </div>
+                </nav>
 
-                </li>
-                
-                <li class="nav-item">
-                    <div class="form-floating mx-3 my-1">
-                        <input
-                            type="text"
-                            class="form-control"
-                            name="Value2"
-                            id="Value2"
-                            placeholder=""
-                            [(ngModel)]="Value2"
-                        />
-                        <label for="Value2">Value2</label>
-                    </div>
-
-                </li>
-
-                <li class="nav-item">
-                    <div class="form-floating mx-3 my-1">
-                        <input
-                            type="text"
-                            class="form-control"
-                            name="Value3"
-                            id="Value3"
-                            placeholder=""
-                            [(ngModel)]="Value3"
-                        />
-                        <label for="Value3">Value3</label>
-                    </div>
-
-                </li>
-
-                <li class="d-flex text-center align-items-center nav-item">
-                    <button
-                        type="button"
-                        class="btn btn-outline-primary"
-                        (click)="send()"
-                        
-                    >
-                        Print
-                    </button>
-                    
-                </li>
-            </ul>
-            
-        </div> 
-
-        
+<!-- Accordian item #1 Ends -->
+            </div>
+        </div>
     </div>
-</nav>
 
-
-
-
+</div>
