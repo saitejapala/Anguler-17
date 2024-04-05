@@ -1,8 +1,8 @@
  <table>
             <thead>
                 <tr>
-                    <th >Column 2</th>
-                    <th >Column 3</th>
+                    <th >S.No. </th>
+                    <th >Site Link</th>
                 </tr>
             </thead>
             <tbody>
@@ -23,5 +23,4 @@
                     <td>https://sai-com2.netlify.app/</td>
                 </tr>
                 
-            </tbody>
-        </table>
+          
