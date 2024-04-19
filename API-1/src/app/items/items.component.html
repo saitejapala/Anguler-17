@@ -1,0 +1,14 @@
+<div class="row row-cols-xl-6 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 justify-content-around">
+    <div  *ngFor="let p of products" (mouseenter)="onMouseEnter(p.id)" (mouseleave)="onMouseLeave()" >
+
+        <div class="card {{p.id}} " [ngClass]="{ 'hovered': hoveredProductId === p.id }" >
+
+            <img class="card-img-top img-fluid " style="height:21rem ;" src="{{p.image}}" alt="Title" />
+            <div class="card-body">
+                <h4 class="card-title">{{p.title}}</h4>
+                <p class="card-text" *ngIf="hoveredProductId===p.id">{{p.description}}</p>
+            </div>
+        </div>
+    </div>
+
+</div>
